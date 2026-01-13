@@ -9,5 +9,139 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  
 }
 
+/* shered style */
+.disply-flex{
+  display: flex;
+}
+.text-primary{
+  color: #FF900E;
+}
+/* dark 2 */
+.text-lighy-gray{
+  color: #424242;
+}
+/* dark 3 */
+.text-gray{
+  color: #727272;
+}
+/* dark 1  */
+.text-black{
+  color: #131313;
+}
+
+.bg-light{
+  background-color: rgba(255, 144, 14, 0.1);
+}
+.btn-primary{
+  background-color: #FF900E;
+  padding: 20px 25px;
+  color:#fff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+
+}
+main .teams{
+  margin-top: 130px;
+}
+
+/* header style */
+
+
+/* navber relatade style */
+.brand{
+  font-size: 2.9rem;
+  font-weight: bold;
+
+}
+.navber{
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-item{
+  list-style: none;
+  margin-right: 35px;
+}
+.nav-link{
+  text-decoration: none;
+ 
+}
+.navber, 
+.banner,
+.teams{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* banner reladed style */
+
+.banner-content{
+  max-width:850px; 
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.banner-title{
+  font-size: 4rem;
+  font-weight: bold;
+}
+.banner-description{
+  line-height: 26px;
+}
+.banner-image{
+  width: 100%;
+}
+/* our feature reladed style */
+.teams{
+  align-items: center;
+}
+.team-img-container{
+  display: grid;
+  grid-template-columns: repeat(2 , 1fr);
+  gap: 24px;
+  
+}
+.our-feature{
+ margin-left: 100px;
+ max-width: 530px;
+}
+.featur-title{
+  font-size: 3.9rem;
+  font-weight: 700;
+}
+#quick-list{
+  font-weight: 500;
+}
+
+/* responsive media quary */
+@media screen and (max-width:576px) {
+  .navber ,
+  .nav-links,
+  .teams{
+    flex-direction: column;
+  }
+  .team-img-container{
+  
+  grid-template-columns: repeat(1 , 1fr);
+  
+  
+}
+.our-feature{
+  margin-left: 20px;
+}
+  
+}
+/* mediam divais responsive */
+@media screen and (min-width:576px) and (max-width:992px) {
+  .teams{
+    flex-direction: column;
+  }
+  .our-feature{
+    margin: 50px auto;
+  }
+}
